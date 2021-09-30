@@ -114,6 +114,12 @@
         <artifactId>ebinterface-ubl-mapping</artifactId>
         <version>4.8.0</version>
       </dependency>
+      
+      <dependency>
+        <groupId>com.finmatics.et</groupId>
+        <artifactId>et-inbetween</artifactId>
+        <version>${project.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -128,9 +134,4 @@
   <modules>
     <module>et-inbetween</module>
   </modules>
-  
-  <build>
-    <plugins>
-    </plugins>
-  </build>
 </project>
