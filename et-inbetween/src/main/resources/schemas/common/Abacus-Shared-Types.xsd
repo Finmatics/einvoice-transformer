@@ -70,6 +70,7 @@
       <xsd:element name="ReceiverPort" type="xsd:string" />
       <xsd:element name="ReceiverPartnerName" type="xsd:string" />
       <xsd:element name="DefaultGLAccount" type="xsd:long" minOccurs="0" />
+      <xsd:element name="Finiface" type="xsd:boolean" />
     </xsd:sequence>
   </xsd:complexType>
   <xsd:element name="SAPDetails" type="SAPDetailsType" />
