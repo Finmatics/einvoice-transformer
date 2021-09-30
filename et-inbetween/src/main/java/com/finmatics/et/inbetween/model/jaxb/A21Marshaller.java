@@ -44,6 +44,9 @@ public class A21Marshaller extends GenericJAXBMarshaller <A21InvoiceType>
     return A21Marshaller.class.getClassLoader ();
   }
 
+  public static final ClassPathResource XSD_SHARED_TYPES = new ClassPathResource ("schemas/common/Abacus-Shared-Types.xsd", _getCL ());
+  public static final ClassPathResource XSD_A21 = new ClassPathResource ("schemas/Abacus-Invoice-2.1.xsd", _getCL ());
+
   private static final List <ClassPathResource> XSDS = new CommonsArrayList <> (CCCTS.getXSDResource (),
                                                                                 CXMLDSig.getXSDResource (),
                                                                                 CXAdES132.getXSDResource (),
@@ -52,10 +55,8 @@ public class A21Marshaller extends GenericJAXBMarshaller <A21InvoiceType>
                                                                                 CUBL21.XSD_COMMON_BASIC_COMPONENTS,
                                                                                 CUBL21.XSD_COMMON_AGGREGATE_COMPONENTS,
                                                                                 CUBL21.XSD_COMMON_EXTENSION_COMPONENTS,
-                                                                                new ClassPathResource ("schemas/common/Abacus-Shared-Types.xsd",
-                                                                                                       _getCL ()),
-                                                                                new ClassPathResource ("schemas/Abacus-Invoice-2.1.xsd",
-                                                                                                       _getCL ())).getAsUnmodifiable ();
+                                                                                XSD_SHARED_TYPES,
+                                                                                XSD_A21).getAsUnmodifiable ();
 
   public A21Marshaller (final boolean bPerformValidation)
   {
