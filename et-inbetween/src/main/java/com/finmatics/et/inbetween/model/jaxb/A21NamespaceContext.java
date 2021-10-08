@@ -25,7 +25,7 @@ import com.helger.xml.namespace.MapBasedNamespaceContext;
 import com.helger.xsds.xmldsig.CXMLDSig;
 
 /**
- * The namespace context to be used as the namespace prefix mapper.
+ * The namespace context to be used as the A21 namespace prefix mapper.
  *
  * @author Philip Helger
  */

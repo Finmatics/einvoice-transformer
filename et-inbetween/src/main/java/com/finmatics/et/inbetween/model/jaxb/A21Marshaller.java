@@ -21,7 +21,10 @@ import javax.annotation.Nonnull;
 
 import com.finmatics.et.inbetween.model.a21.A21InvoiceType;
 import com.finmatics.et.inbetween.model.a21.ObjectFactory;
+import com.helger.commons.annotation.Nonempty;
+import com.helger.commons.annotation.ReturnsMutableCopy;
 import com.helger.commons.collection.impl.CommonsArrayList;
+import com.helger.commons.collection.impl.ICommonsList;
 import com.helger.commons.io.resource.ClassPathResource;
 import com.helger.jaxb.GenericJAXBMarshaller;
 import com.helger.jaxb.validation.LoggingValidationEventHandler;
@@ -63,5 +66,17 @@ public class A21Marshaller extends GenericJAXBMarshaller <A21InvoiceType>
     super (A21InvoiceType.class, bPerformValidation ? XSDS : null, new ObjectFactory ()::createInvoice);
     setValidationEventHandlerFactory (x -> new LoggingValidationEventHandler ());
     setNamespaceContext (A21NamespaceContext.getInstance ());
+  }
+
+  /**
+   * @return All the XML Schema resources required for A21. Neither
+   *         <code>null</code> nor empty.
+   */
+  @Nonnull
+  @Nonempty
+  @ReturnsMutableCopy
+  public static ICommonsList <ClassPathResource> getAllXSDs ()
+  {
+    return new CommonsArrayList <> (XSDS);
   }
 }

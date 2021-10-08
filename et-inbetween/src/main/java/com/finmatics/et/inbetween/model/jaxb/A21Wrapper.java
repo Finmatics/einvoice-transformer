@@ -28,8 +28,8 @@ import com.finmatics.et.inbetween.model.a21.A21InvoiceType;
 import oasis.names.specification.ubl.schema.xsd.commonbasiccomponents_21.*;
 
 /**
- * An API extension to {@link A21InvoiceType} adding the simple setters on to of
- * it.
+ * An API extension to {@link A21InvoiceType} adding the simple setters on top
+ * of it.
  *
  * @author Philip Helger
  */
