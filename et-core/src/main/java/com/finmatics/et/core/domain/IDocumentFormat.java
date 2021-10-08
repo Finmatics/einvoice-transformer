@@ -27,16 +27,4 @@ public interface IDocumentFormat extends IHasID <String>, IHasDisplayName
    */
   @Nonnull
   ESyntaxType getSyntax ();
-
-  /**
-   * @return <code>true</code> if this document format is usable as a source
-   *         format, <code>false</code> if not.
-   */
-  boolean isSourceFormat ();
-
-  /**
-   * @return <code>true</code> if this document format is usable as a target
-   *         format, <code>false</code> if not.
-   */
-  boolean isTargetFormat ();
 }

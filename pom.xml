@@ -131,12 +131,12 @@
       
       <dependency>
         <groupId>com.finmatics.et</groupId>
-        <artifactId>et-core</artifactId>
+        <artifactId>et-inbetween</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>com.finmatics.et</groupId>
-        <artifactId>et-inbetween</artifactId>
+        <artifactId>et-core</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>
@@ -151,8 +151,8 @@
   </dependencies>
 
   <modules>
-    <module>et-core</module>
     <module>et-inbetween</module>
+    <module>et-core</module>
   </modules>
   
   <build>
