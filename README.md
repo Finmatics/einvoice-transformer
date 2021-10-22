@@ -2,7 +2,7 @@
 
 An extensible transformation engine for different eInvoicing formats.
 
-Latest release: **v0.1.0**
+Latest release: **v0.1.1**
 
 ## Modules
 
