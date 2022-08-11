@@ -21,7 +21,7 @@
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.11.4</version>
+    <version>1.11.5</version>
   </parent>
   <groupId>com.finmatics.et</groupId>
   <artifactId>et-parent-pom</artifactId>
@@ -71,7 +71,7 @@
       <dependency>
         <groupId>com.helger.commons</groupId>
         <artifactId>ph-commons-parent-pom</artifactId>
-        <version>10.1.6</version>
+        <version>10.1.8</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -92,7 +92,7 @@
       <dependency>
         <groupId>com.helger.web</groupId>
         <artifactId>ph-web-parent-pom</artifactId>
-        <version>9.6.3</version>
+        <version>9.6.4</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -106,21 +106,21 @@
       <dependency>
         <groupId>com.helger.photon</groupId>
         <artifactId>ph-oton-parent-pom</artifactId>
-        <version>8.3.6</version>
+        <version>8.4.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.helger.peppol</groupId>
         <artifactId>peppol-commons-parent-pom</artifactId>
-        <version>8.7.2</version>
+        <version>8.7.6</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.helger</groupId>
         <artifactId>ph-ebinterface</artifactId>
-        <version>6.4.0</version>
+        <version>6.5.0</version>
       </dependency>
       <dependency>
         <groupId>at.austriapro</groupId>
