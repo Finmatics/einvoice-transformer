@@ -47,7 +47,8 @@ public class A21Marshaller extends GenericJAXBMarshaller <A21InvoiceType>
     return A21Marshaller.class.getClassLoader ();
   }
 
-  public static final ClassPathResource XSD_SHARED_TYPES = new ClassPathResource ("schemas/common/Abacus-Shared-Types.xsd", _getCL ());
+  public static final ClassPathResource XSD_SHARED_TYPES = new ClassPathResource ("schemas/common/Abacus-Shared-Types.xsd",
+                                                                                  _getCL ());
   public static final ClassPathResource XSD_A21 = new ClassPathResource ("schemas/Abacus-Invoice-2.1.xsd", _getCL ());
 
   private static final List <ClassPathResource> XSDS = new CommonsArrayList <> (CCCTS.getXSDResource (),
@@ -64,7 +65,7 @@ public class A21Marshaller extends GenericJAXBMarshaller <A21InvoiceType>
   public A21Marshaller (final boolean bPerformValidation)
   {
     super (A21InvoiceType.class, bPerformValidation ? XSDS : null, new ObjectFactory ()::createInvoice);
-    setValidationEventHandlerFactory (x -> new LoggingValidationEventHandler ());
+    setValidationEventHandler (new LoggingValidationEventHandler ());
     setNamespaceContext (A21NamespaceContext.getInstance ());
   }
 
