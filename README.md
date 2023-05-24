@@ -2,7 +2,7 @@
 
 An extensible transformation engine for different eInvoicing formats.
 
-Latest release: **v0.1.1**
+Latest release: **v0.2.0**
 
 ## Modules
 
@@ -32,5 +32,12 @@ It is recommended to include the parent POM as a BOM like this (replace `x.y.z` 
 
 ## Building
 
-* Requires Java 1.8 or higher
+* Requires Java 11 or higher
 * Uses Apache Maven 3.6 or higher - `mvn clean install`
+
+## News and Noteworthy
+
+* v0.2.0
+    * Updated to Java 11 as the baseline
+* v0.1.1
+     * Last version build with Java 1.8
