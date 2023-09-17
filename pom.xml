@@ -21,7 +21,7 @@
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>2.0.3</version>
+    <version>2.0.4</version>
   </parent>
   <groupId>com.finmatics.et</groupId>
   <artifactId>et-parent-pom</artifactId>
@@ -65,7 +65,7 @@
     <jaxb-plugin.group>com.helger.maven</jaxb-plugin.group>
     <jaxb-plugin.artifact>jaxb40-maven-plugin</jaxb-plugin.artifact>
     <jaxb-plugin.version>0.16.1</jaxb-plugin.version>
-    <ph-ubl.version>8.0.2</ph-ubl.version>
+    <ph-ubl.version>8.0.3</ph-ubl.version>
     <ph-xsds.version>3.0.0</ph-xsds.version>
   </properties>
   
@@ -74,7 +74,7 @@
       <dependency>
         <groupId>com.helger.commons</groupId>
         <artifactId>ph-commons-parent-pom</artifactId>
-        <version>11.0.4</version>
+        <version>11.1.2</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -95,28 +95,28 @@
       <dependency>
         <groupId>com.helger.web</groupId>
         <artifactId>ph-web-parent-pom</artifactId>
-        <version>10.1.1</version>
+        <version>10.1.5</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.helger</groupId>
         <artifactId>ph-css-parent-pom</artifactId>
-        <version>7.0.0</version>
+        <version>7.0.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.helger.photon</groupId>
         <artifactId>ph-oton-parent-pom</artifactId>
-        <version>8.4.5</version>
+        <version>9.2.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.helger.peppol</groupId>
         <artifactId>peppol-commons-parent-pom</artifactId>
-        <version>9.0.5</version>
+        <version>9.0.8</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
