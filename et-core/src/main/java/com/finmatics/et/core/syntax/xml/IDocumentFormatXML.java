@@ -21,6 +21,11 @@ import javax.annotation.Nullable;
 import com.finmatics.et.core.domain.ESyntaxType;
 import com.finmatics.et.core.domain.IDocumentFormat;
 
+/**
+ * Specialized {@link IDocumentFormat} for XML.
+ *
+ * @author Philip Helger
+ */
 public interface IDocumentFormatXML extends IDocumentFormat
 {
   @Nonnull

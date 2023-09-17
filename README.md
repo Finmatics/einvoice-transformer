@@ -37,6 +37,8 @@ It is recommended to include the parent POM as a BOM like this (replace `x.y.z` 
 
 ## News and Noteworthy
 
+* v0.2.1
+    * Updated to ph-ubl 8.0.3
 * v0.2.0
     * Updated to Java 11 as the baseline
 * v0.1.1
