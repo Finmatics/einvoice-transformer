@@ -24,6 +24,11 @@ import com.finmatics.et.core.syntax.xml.IDocumentFormatXML;
 import com.finmatics.et.inbetween.model.a21.A21InvoiceType;
 import com.helger.commons.error.list.ErrorList;
 
+/**
+ * Factory to convert from arbitrary XML format to the A21 format.
+ *
+ * @author Philip Helger
+ */
 public interface ITransformToInbetweenFactoryXML
 {
   /**

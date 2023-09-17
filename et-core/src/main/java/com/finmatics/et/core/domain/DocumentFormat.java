@@ -20,6 +20,7 @@ import javax.annotation.Nonnull;
 import com.helger.commons.ValueEnforcer;
 import com.helger.commons.annotation.Nonempty;
 import com.helger.commons.hashcode.HashCodeGenerator;
+import com.helger.commons.string.ToStringGenerator;
 
 /**
  * Standalone implementation of {@link IDocumentFormat}
@@ -80,5 +81,14 @@ public class DocumentFormat implements IDocumentFormat
   public int hashCode ()
   {
     return new HashCodeGenerator (this).append (m_sID).getHashCode ();
+  }
+
+  @Override
+  public String toString ()
+  {
+    return new ToStringGenerator (null).append ("ID", m_sID)
+                                       .append ("DisplayName", m_sDisplayName)
+                                       .append ("Syntax", m_eSyntax)
+                                       .getToString ();
   }
 }
