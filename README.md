@@ -2,7 +2,7 @@
 
 An extensible transformation engine for different eInvoicing formats.
 
-Latest release: **v0.2.0**
+Latest release: **v0.2.1**
 
 ## Modules
 
@@ -37,7 +37,7 @@ It is recommended to include the parent POM as a BOM like this (replace `x.y.z` 
 
 ## News and Noteworthy
 
-* v0.2.1
+* v0.2.1 - 2023-09-17
     * Updated to ph-ubl 8.0.3
 * v0.2.0 - 2023-05-24
     * Updated to Java 11 as the baseline
