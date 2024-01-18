@@ -100,6 +100,8 @@
       <xsd:element ref="ast:AbacusDetails" minOccurs="1" maxOccurs="1" />
       <!-- added -->
       <xsd:element ref="ast:SAPDetails" minOccurs="0" maxOccurs="1" />
+      <!-- added -->
+      <xsd:element ref="ast:MeteringDetails" minOccurs="0" maxOccurs="1" />
     </xsd:sequence>
   </xsd:complexType>
 </xsd:schema>

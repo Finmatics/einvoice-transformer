@@ -16,62 +16,97 @@
     limitations under the License.
 
 -->
-<xsd:schema xmlns="urn:abacus.ac:schema:xsd:shared-types"
-            xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
-            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="urn:abacus.ac:schema:xsd:shared-types"
-            elementFormDefault="qualified"
-            attributeFormDefault="unqualified">
-  <xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2" />
+<xs:schema xmlns="urn:abacus.ac:schema:xsd:shared-types"
+           xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:abacus.ac:schema:xsd:shared-types"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+  <xs:import namespace="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2" />
 
-  <xsd:complexType name="DeliveryDateControlType">
-    <xsd:annotation>
-      <xsd:documentation>Created for issue #36</xsd:documentation>
-    </xsd:annotation>
-    <xsd:simpleContent>
-      <xsd:extension base="udt:TextType" />
-    </xsd:simpleContent>
-  </xsd:complexType>
-  <xsd:element name="DeliveryDateControl" type="DeliveryDateControlType" />
+  <xs:complexType name="DeliveryDateControlType">
+    <xs:annotation>
+      <xs:documentation>Created for issue #36</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="udt:TextType" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="DeliveryDateControl" type="DeliveryDateControlType" />
 
-  <xsd:complexType name="TypedNoteType">
-    <xsd:annotation>
-      <xsd:documentation>Created for issue #37</xsd:documentation>
-    </xsd:annotation>
-    <xsd:simpleContent>
-      <xsd:extension base="udt:TextType">
-        <xsd:attribute name="type" type="xsd:string" use="required" />
-      </xsd:extension>
-    </xsd:simpleContent>
-  </xsd:complexType>
-  <xsd:element name="TypedNote" type="TypedNoteType" />
+  <xs:complexType name="TypedNoteType">
+    <xs:annotation>
+      <xs:documentation>Created for issue #37</xs:documentation>
+    </xs:annotation>
+    <xs:simpleContent>
+      <xs:extension base="udt:TextType">
+        <xs:attribute name="type" type="xs:string" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="TypedNote" type="TypedNoteType" />
 
-  <xsd:complexType name="AbacusDetailsType">
-    <xsd:annotation>
-      <xsd:documentation>Created for issue #42</xsd:documentation>
-    </xsd:annotation>
-    <xsd:sequence>
+  <xs:complexType name="AbacusDetailsType">
+    <xs:annotation>
+      <xs:documentation>Created for issue #42</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
       <!-- Maps to the top-level "id" field -->
-      <xsd:element name="ID" type="xsd:string" minOccurs="0"/>
-    </xsd:sequence>
-  </xsd:complexType>
-  <xsd:element name="AbacusDetails" type="AbacusDetailsType" />
+      <xs:element name="ID" type="xs:string" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AbacusDetails" type="AbacusDetailsType" />
   
-  <xsd:complexType name="SAPDetailsType">
-    <xsd:annotation>
-      <xsd:documentation>Created for issue #42</xsd:documentation>
-    </xsd:annotation>
-    <xsd:sequence>
-      <xsd:element name="Client" type="xsd:string" />
-      <xsd:element name="CompCode" type="xsd:string" />
-      <xsd:element name="UserName" type="xsd:string" />
-      <xsd:element name="SenderPort" type="xsd:string" />
-      <xsd:element name="SenderPartnerName" type="xsd:string" />
-      <xsd:element name="ReceiverPort" type="xsd:string" />
-      <xsd:element name="ReceiverPartnerName" type="xsd:string" />
-      <xsd:element name="DefaultGLAccount" type="xsd:long" minOccurs="0" />
-      <xsd:element name="Finiface" type="xsd:boolean" />
-    </xsd:sequence>
-  </xsd:complexType>
-  <xsd:element name="SAPDetails" type="SAPDetailsType" />
-</xsd:schema>
+  <xs:complexType name="SAPDetailsType">
+    <xs:annotation>
+      <xs:documentation>Created for issue #42</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Client" type="xs:string" />
+      <xs:element name="CompCode" type="xs:string" />
+      <xs:element name="UserName" type="xs:string" />
+      <xs:element name="SenderPort" type="xs:string" />
+      <xs:element name="SenderPartnerName" type="xs:string" />
+      <xs:element name="ReceiverPort" type="xs:string" />
+      <xs:element name="ReceiverPartnerName" type="xs:string" />
+      <xs:element name="DefaultGLAccount" type="xs:long" minOccurs="0" />
+      <xs:element name="Finiface" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SAPDetails" type="SAPDetailsType" />
+  
+  <xs:complexType name="MeteringPositionType">
+    <xs:sequence>
+      <xs:element name="DeviceNumber" type="xs:string" />
+      <xs:element name="DateFrom" type="xs:date" />
+      <xs:element name="MeterValueFrom" type="xs:decimal" />
+      <xs:element name="MeteringMethodFrom" type="xs:string" minOccurs="0"/>
+      <xs:element name="DateTo" type="xs:string" />
+      <xs:element name="MeterValueTo" type="xs:decimal" />
+      <xs:element name="MeteringMethodTo" type="xs:string" />
+      <xs:element name="MeteringUOM" type="xs:string" />
+      <xs:element name="MeteringQuantity" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="MeteringPointType">
+    <xs:sequence>
+      <xs:element name="ID" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Maps to the MeteringPoint element in ebUtilities</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MeteringPosition" type="MeteringPositionType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="MeteringDetailsType">
+    <xs:annotation>
+      <xs:documentation>Created for supporting details from ebUtilities (Meter Information)</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="MeteringPoint" type="MeteringPointType" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MeteringDetails" type="MeteringDetailsType" />
+</xs:schema>
