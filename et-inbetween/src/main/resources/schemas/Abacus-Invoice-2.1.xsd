@@ -36,7 +36,7 @@
   <xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" />
   <xsd:import namespace="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2" />
   <xsd:import namespace="urn:abacus.ac:schema:xsd:shared-types" schemaLocation="common/Abacus-Shared-Types.xsd" />
-  <xsd:element name="Invoice" type="InvoiceType"/>
+  <xsd:element name="Invoice" type="InvoiceType" />
   <xsd:complexType name="InvoiceType">
     <xsd:sequence>
       <xsd:element ref="cbc:UBLVersionID" minOccurs="0" maxOccurs="1" />

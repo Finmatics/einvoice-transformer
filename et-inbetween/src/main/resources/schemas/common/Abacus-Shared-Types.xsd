@@ -85,7 +85,7 @@
       <xs:element name="MeterValueTo" type="xs:decimal" />
       <xs:element name="MeteringMethodTo" type="xs:string" />
       <xs:element name="MeteringUOM" type="xs:string" />
-      <xs:element name="MeteringQuantity" type="xs:string" />
+      <xs:element name="MeteringQuantity" type="xs:decimal" />
     </xs:sequence>
   </xs:complexType>
   
