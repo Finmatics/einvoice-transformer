@@ -37,6 +37,8 @@ It is recommended to include the parent POM as a BOM like this (replace `x.y.z` 
 
 ## News and Noteworthy
 
+* v0.2.2 - 2024-01-25
+    * Updated the Inbetween XSD to include Metering information
 * v0.2.1 - 2023-09-17
     * Updated to ph-ubl 8.0.3
 * v0.2.0 - 2023-05-24
