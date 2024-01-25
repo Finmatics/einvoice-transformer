@@ -88,7 +88,18 @@
       <xs:element name="MeteringQuantity" type="xs:decimal" />
     </xs:sequence>
   </xs:complexType>
-  
+
+  <xs:complexType name="ConsumptionHistoryType">
+    <xs:sequence>
+      <xs:element name="Description" type="xs:string" />
+      <xs:element name="HistoryUOM" type="xs:string" />
+      <xs:element name="DateFrom" type="xs:date" minOccurs="0" />
+      <xs:element name="DateTo" type="xs:date" minOccurs="0" />
+      <xs:element name="Quantity" type="xs:decimal" />
+      <xs:element name="AdditionalText" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+ 
   <xs:complexType name="MeteringPointType">
     <xs:sequence>
       <xs:element name="ID" type="xs:string">
@@ -97,6 +108,7 @@
         </xs:annotation>
       </xs:element>
       <xs:element name="MeteringPosition" type="MeteringPositionType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="ConsumptionHistory" type="ConsumptionHistoryType" minOccurs="0" maxOccurs="unbounded" />
     </xs:sequence>
   </xs:complexType>
   

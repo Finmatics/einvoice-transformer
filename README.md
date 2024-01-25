@@ -2,7 +2,7 @@
 
 An extensible transformation engine for different eInvoicing formats.
 
-Latest release: **v0.2.1**
+Latest release: **v0.2.3**
 
 ## Modules
 
@@ -37,6 +37,8 @@ It is recommended to include the parent POM as a BOM like this (replace `x.y.z` 
 
 ## News and Noteworthy
 
+* v0.2.3 - 2024-01-25
+    * Updated the Inbetween XSD to include Metering/ConsumptionHistory information
 * v0.2.2 - 2024-01-25
     * Updated the Inbetween XSD to include Metering information
 * v0.2.1 - 2023-09-17
