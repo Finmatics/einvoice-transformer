@@ -75,6 +75,13 @@
   </xs:complexType>
   <xs:element name="SAPDetails" type="SAPDetailsType" />
   
+  <xs:complexType name="ConversionType">
+    <xs:sequence>
+      <xs:element name="Type" type="xs:string" />
+      <xs:element name="Value" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+
   <xs:complexType name="MeteringPositionType">
     <xs:sequence>
       <xs:element name="DeviceNumber" type="xs:string" />
@@ -86,6 +93,9 @@
       <xs:element name="MeteringMethodTo" type="xs:string" />
       <xs:element name="MeteringUOM" type="xs:string" />
       <xs:element name="MeteringQuantity" type="xs:decimal" />
+      <xs:element name="Conversion" type="ConversionType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="BillingUOM" type="xs:string" />
+      <xs:element name="BillingQuantity" type="xs:decimal" />
     </xs:sequence>
   </xs:complexType>
 
