@@ -21,7 +21,7 @@
   <parent>
     <groupId>com.finmatics.et</groupId>
     <artifactId>et-parent-pom</artifactId>
-    <version>0.2.4-SNAPSHOT</version>
+    <version>0.2.4</version>
   </parent>
   <artifactId>et-inbetween</artifactId>
   <name>et-inbetween</name>
