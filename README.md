@@ -37,6 +37,8 @@ It is recommended to include the parent POM as a BOM like this (replace `x.y.z` 
 
 ## News and Noteworthy
 
+* v0.2.5
+    * Updated the Inbetween XSD and made `ast:AbacusDetails` optional
 * v0.2.4 - 2024-02-26
     * Updated the Inbetween XSD to include MeteringPosition/Conversion and other information
 * v0.2.3 - 2024-01-25
