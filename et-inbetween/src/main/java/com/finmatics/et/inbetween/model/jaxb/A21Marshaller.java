@@ -62,9 +62,9 @@ public class A21Marshaller extends GenericJAXBMarshaller <A21InvoiceType>
                                                                                 XSD_SHARED_TYPES,
                                                                                 XSD_A21).getAsUnmodifiable ();
 
-  public A21Marshaller (final boolean bPerformValidation)
+  public A21Marshaller ()
   {
-    super (A21InvoiceType.class, bPerformValidation ? XSDS : null, new ObjectFactory ()::createInvoice);
+    super (A21InvoiceType.class, XSDS, new ObjectFactory ()::createInvoice);
     setValidationEventHandler (new LoggingValidationEventHandler ());
     setNamespaceContext (A21NamespaceContext.getInstance ());
   }
