@@ -75,7 +75,7 @@
       <dependency>
         <groupId>com.helger.commons</groupId>
         <artifactId>ph-commons-parent-pom</artifactId>
-        <version>11.1.8</version>
+        <version>11.1.11</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -117,7 +117,7 @@
       <dependency>
         <groupId>com.helger.peppol</groupId>
         <artifactId>peppol-commons-parent-pom</artifactId>
-        <version>9.5.1</version>
+        <version>9.7.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -129,7 +129,7 @@
       <dependency>
         <groupId>at.austriapro</groupId>
         <artifactId>ebinterface-ubl-mapping</artifactId>
-        <version>5.2.4</version>
+        <version>5.2.7</version>
       </dependency>
       
       <dependency>
