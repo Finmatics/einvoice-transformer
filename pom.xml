@@ -48,18 +48,18 @@
   </developers>
 
   <!-- New staging repository -->
+  <!--
   <distributionManagement>
     <snapshotRepository>
-      <!-- Username/password must be in settings.xml -->
       <id>ossrh</id>
       <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
     </snapshotRepository>
     <repository>
-      <!-- Username/password must be in settings.xml -->
       <id>ossrh</id>
       <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
   </distributionManagement>
+  -->
   
   <properties>
     <jaxb-plugin.group>org.jvnet.jaxb</jaxb-plugin.group>
@@ -96,7 +96,7 @@
       <dependency>
         <groupId>com.helger.web</groupId>
         <artifactId>ph-web-parent-pom</artifactId>
-        <version>10.4.2</version>
+        <version>10.4.3</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -117,7 +117,7 @@
       <dependency>
         <groupId>com.helger.peppol</groupId>
         <artifactId>peppol-commons-parent-pom</artifactId>
-        <version>11.0.1</version>
+        <version>11.0.3</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -129,7 +129,7 @@
       <dependency>
         <groupId>at.austriapro</groupId>
         <artifactId>ebinterface-ubl-mapping</artifactId>
-        <version>5.3.0</version>
+        <version>5.3.2</version>
       </dependency>
       
       <dependency>
