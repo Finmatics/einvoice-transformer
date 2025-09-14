@@ -17,15 +17,13 @@ package com.finmatics.et.inbetween.model.jaxb;
 
 import java.util.List;
 
-import javax.annotation.Nonnull;
-
 import com.finmatics.et.inbetween.model.a21.A21InvoiceType;
 import com.finmatics.et.inbetween.model.a21.ObjectFactory;
-import com.helger.commons.annotation.Nonempty;
-import com.helger.commons.annotation.ReturnsMutableCopy;
-import com.helger.commons.collection.impl.CommonsArrayList;
-import com.helger.commons.collection.impl.ICommonsList;
-import com.helger.commons.io.resource.ClassPathResource;
+import com.helger.annotation.Nonempty;
+import com.helger.annotation.style.ReturnsMutableCopy;
+import com.helger.collection.commons.CommonsArrayList;
+import com.helger.collection.commons.ICommonsList;
+import com.helger.io.resource.ClassPathResource;
 import com.helger.jaxb.GenericJAXBMarshaller;
 import com.helger.jaxb.validation.LoggingValidationEventHandler;
 import com.helger.ubl21.CUBL21;
@@ -33,6 +31,8 @@ import com.helger.xsds.ccts.cct.schemamodule.CCCTS;
 import com.helger.xsds.xades132.CXAdES132;
 import com.helger.xsds.xades141.CXAdES141;
 import com.helger.xsds.xmldsig.CXMLDSig;
+
+import jakarta.annotation.Nonnull;
 
 /**
  * JAXB marshaller and unmarshaller for A21 invoices

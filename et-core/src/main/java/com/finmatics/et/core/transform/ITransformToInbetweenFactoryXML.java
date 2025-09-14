@@ -15,14 +15,14 @@
  */
 package com.finmatics.et.core.transform;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 import org.w3c.dom.Document;
 
 import com.finmatics.et.core.syntax.xml.IDocumentFormatXML;
 import com.finmatics.et.inbetween.model.a21.A21InvoiceType;
-import com.helger.commons.error.list.ErrorList;
+import com.helger.diagnostics.error.list.ErrorList;
+
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 /**
  * Factory to convert from arbitrary XML format to the A21 format.

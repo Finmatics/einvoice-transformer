@@ -15,14 +15,15 @@
  */
 package com.finmatics.et.inbetween.model.jaxb;
 
-import javax.annotation.Nonnull;
 import javax.xml.XMLConstants;
 
 import com.finmatics.et.inbetween.model.a21.ObjectFactory;
-import com.helger.commons.annotation.Singleton;
+import com.helger.annotation.misc.Singleton;
 import com.helger.ubl21.CUBL21;
 import com.helger.xml.namespace.MapBasedNamespaceContext;
 import com.helger.xsds.xmldsig.CXMLDSig;
+
+import jakarta.annotation.Nonnull;
 
 /**
  * The namespace context to be used as the A21 namespace prefix mapper.

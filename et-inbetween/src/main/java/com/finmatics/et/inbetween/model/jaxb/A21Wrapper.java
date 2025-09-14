@@ -19,12 +19,11 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import javax.annotation.concurrent.NotThreadSafe;
-
 import com.finmatics.et.inbetween.model.a21.A21InvoiceType;
+import com.helger.annotation.concurrent.NotThreadSafe;
 
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 import oasis.names.specification.ubl.schema.xsd.commonbasiccomponents_21.*;
 
 /**

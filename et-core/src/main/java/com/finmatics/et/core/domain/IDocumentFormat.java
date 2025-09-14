@@ -15,10 +15,10 @@
  */
 package com.finmatics.et.core.domain;
 
-import javax.annotation.Nonnull;
+import com.helger.base.id.IHasID;
+import com.helger.base.name.IHasDisplayName;
 
-import com.helger.commons.id.IHasID;
-import com.helger.commons.name.IHasDisplayName;
+import jakarta.annotation.Nonnull;
 
 public interface IDocumentFormat extends IHasID <String>, IHasDisplayName
 {

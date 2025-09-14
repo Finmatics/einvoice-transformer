@@ -15,11 +15,11 @@
  */
 package com.finmatics.et.core.syntax.xml;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 import com.finmatics.et.core.domain.ESyntaxType;
 import com.finmatics.et.core.domain.IDocumentFormat;
+
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 /**
  * Specialized {@link IDocumentFormat} for XML.

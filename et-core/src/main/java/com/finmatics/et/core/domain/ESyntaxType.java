@@ -15,9 +15,9 @@
  */
 package com.finmatics.et.core.domain;
 
-import javax.annotation.Nonnull;
+import com.helger.annotation.Nonempty;
 
-import com.helger.commons.annotation.Nonempty;
+import jakarta.annotation.Nonnull;
 
 /**
  * Enumeration with all supported syntaxes.
