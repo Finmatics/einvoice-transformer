@@ -38,6 +38,9 @@ It is recommended to include the parent POM as a BOM like this (replace `x.y.z` 
 ## News and Noteworthy
 
 
+v0.3.1 - 2025-12-30
+* Using JSpecify annotations
+
 v0.3.0 - 2025-09-14
 * Updated to ph-commons v12 and using Java 17 as the baseline
 
