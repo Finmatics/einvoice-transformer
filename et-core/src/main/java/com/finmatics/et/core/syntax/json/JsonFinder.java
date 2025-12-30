@@ -18,6 +18,9 @@ package com.finmatics.et.core.syntax.json;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.state.ETriState;
@@ -28,9 +31,6 @@ import com.helger.json.IJson;
 import com.helger.json.IJsonArray;
 import com.helger.json.IJsonObject;
 import com.helger.json.IJsonValue;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 /**
  * A small helper class to simplify traversal in a JSON hierarchy
@@ -44,8 +44,8 @@ public final class JsonFinder
   private final ErrorList m_aErrorList;
 
   public JsonFinder (@Nullable final String sPath,
-                     @Nonnull final IJsonObject aJson,
-                     @Nonnull final ErrorList aErrorList)
+                     @NonNull final IJsonObject aJson,
+                     @NonNull final ErrorList aErrorList)
   {
     m_sPath = sPath;
     m_aJson = aJson;
@@ -59,7 +59,7 @@ public final class JsonFinder
   }
 
   @Nullable
-  public IJson findAny (@Nonnull @Nonempty final String sChild, final boolean bMandatory)
+  public IJson findAny (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
     ValueEnforcer.notEmpty (sChild, "child");
     if (!m_aJson.isObject ())
@@ -77,7 +77,7 @@ public final class JsonFinder
   }
 
   @Nullable
-  public IJsonValue findValue (@Nonnull @Nonempty final String sChild, final boolean bMandatory)
+  public IJsonValue findValue (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
     final IJson aChild = findAny (sChild, bMandatory);
     if (aChild != null)
@@ -98,7 +98,7 @@ public final class JsonFinder
   }
 
   @Nullable
-  public JsonFinder findObject (@Nonnull @Nonempty final String sChild, final boolean bMandatory)
+  public JsonFinder findObject (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
     final IJson aChild = findAny (sChild, bMandatory);
     if (aChild != null)
@@ -121,7 +121,7 @@ public final class JsonFinder
   }
 
   @Nullable
-  public IJsonArray findArray (@Nonnull @Nonempty final String sChild, final boolean bMandatory)
+  public IJsonArray findArray (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
     final IJson aChild = findAny (sChild, bMandatory);
     if (aChild != null)
@@ -144,7 +144,7 @@ public final class JsonFinder
   }
 
   @Nullable
-  public String findString (@Nonnull @Nonempty final String sChild, final boolean bMandatory)
+  public String findString (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
     final IJsonValue aJson = findValue (sChild, bMandatory);
     if (aJson == null)
@@ -153,7 +153,7 @@ public final class JsonFinder
   }
 
   @Nullable
-  public LocalDate findLocalDate (@Nonnull @Nonempty final String sChild, final boolean bMandatory)
+  public LocalDate findLocalDate (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
     final String s = findString (sChild, bMandatory);
     if (s == null)
@@ -173,15 +173,15 @@ public final class JsonFinder
     return ret;
   }
 
-  @Nonnull
-  public ETriState findBoolean (@Nonnull @Nonempty final String sChild, final boolean bMandatory)
+  @NonNull
+  public ETriState findBoolean (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
     final IJsonValue aJson = findValue (sChild, bMandatory);
     return aJson == null ? ETriState.UNDEFINED : ETriState.valueOf (aJson.getAsBoolean ());
   }
 
   @Nullable
-  public Integer findInt (@Nonnull @Nonempty final String sChild, final boolean bMandatory)
+  public Integer findInt (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
     final IJsonValue aJson = findValue (sChild, bMandatory);
     if (aJson == null)
@@ -202,7 +202,7 @@ public final class JsonFinder
   }
 
   @Nullable
-  public Long findLong (@Nonnull @Nonempty final String sChild, final boolean bMandatory)
+  public Long findLong (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
     final IJsonValue aJson = findValue (sChild, bMandatory);
     if (aJson == null)
@@ -223,7 +223,7 @@ public final class JsonFinder
   }
 
   @Nullable
-  public BigDecimal findDouble (@Nonnull @Nonempty final String sChild, final boolean bMandatory)
+  public BigDecimal findDouble (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
     final IJsonValue aJson = findValue (sChild, bMandatory);
     if (aJson == null)

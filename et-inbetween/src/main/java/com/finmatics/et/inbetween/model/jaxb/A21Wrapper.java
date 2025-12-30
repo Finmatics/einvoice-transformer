@@ -22,8 +22,8 @@ import java.time.LocalTime;
 import com.finmatics.et.inbetween.model.a21.A21InvoiceType;
 import com.helger.annotation.concurrent.NotThreadSafe;
 
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import oasis.names.specification.ubl.schema.xsd.commonbasiccomponents_21.*;
 
 /**
@@ -43,7 +43,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type InvoiceTypeCodeType and
    *         never <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public InvoiceTypeCodeType setInvoiceTypeCode (@Nullable final String valueParam)
   {
     InvoiceTypeCodeType aObj = getInvoiceTypeCode ();
@@ -67,7 +67,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type DocumentCurrencyCodeType
    *         and never <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public DocumentCurrencyCodeType setDocumentCurrencyCode (@Nullable final String valueParam)
   {
     DocumentCurrencyCodeType aObj = getDocumentCurrencyCode ();
@@ -91,7 +91,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type TaxCurrencyCodeType and
    *         never <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public TaxCurrencyCodeType setTaxCurrencyCode (@Nullable final String valueParam)
   {
     TaxCurrencyCodeType aObj = getTaxCurrencyCode ();
@@ -115,7 +115,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type PricingCurrencyCodeType and
    *         never <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public PricingCurrencyCodeType setPricingCurrencyCode (@Nullable final String valueParam)
   {
     PricingCurrencyCodeType aObj = getPricingCurrencyCode ();
@@ -139,7 +139,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type PaymentCurrencyCodeType and
    *         never <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public PaymentCurrencyCodeType setPaymentCurrencyCode (@Nullable final String valueParam)
   {
     PaymentCurrencyCodeType aObj = getPaymentCurrencyCode ();
@@ -163,7 +163,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type
    *         PaymentAlternativeCurrencyCodeType and never <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public PaymentAlternativeCurrencyCodeType setPaymentAlternativeCurrencyCode (@Nullable final String valueParam)
   {
     PaymentAlternativeCurrencyCodeType aObj = getPaymentAlternativeCurrencyCode ();
@@ -187,7 +187,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type AccountingCostCodeType and
    *         never <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public AccountingCostCodeType setAccountingCostCode (@Nullable final String valueParam)
   {
     AccountingCostCodeType aObj = getAccountingCostCode ();
@@ -211,7 +211,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type IssueDateType and never
    *         <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public IssueDateType setIssueDate (@Nullable final LocalDate valueParam)
   {
     IssueDateType aObj = getIssueDate ();
@@ -235,7 +235,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type DueDateType and never
    *         <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public DueDateType setDueDate (@Nullable final LocalDate valueParam)
   {
     DueDateType aObj = getDueDate ();
@@ -259,7 +259,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type TaxPointDateType and never
    *         <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public TaxPointDateType setTaxPointDate (@Nullable final LocalDate valueParam)
   {
     TaxPointDateType aObj = getTaxPointDate ();
@@ -283,7 +283,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type IssueTimeType and never
    *         <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public IssueTimeType setIssueTime (@Nullable final LocalTime valueParam)
   {
     IssueTimeType aObj = getIssueTime ();
@@ -307,7 +307,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type UBLVersionIDType and never
    *         <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public UBLVersionIDType setUBLVersionID (@Nullable final String valueParam)
   {
     UBLVersionIDType aObj = getUBLVersionID ();
@@ -331,7 +331,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type CustomizationIDType and
    *         never <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public CustomizationIDType setCustomizationID (@Nullable final String valueParam)
   {
     CustomizationIDType aObj = getCustomizationID ();
@@ -355,7 +355,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type ProfileIDType and never
    *         <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public ProfileIDType setProfileID (@Nullable final String valueParam)
   {
     ProfileIDType aObj = getProfileID ();
@@ -379,7 +379,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type ProfileExecutionIDType and
    *         never <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public ProfileExecutionIDType setProfileExecutionID (@Nullable final String valueParam)
   {
     ProfileExecutionIDType aObj = getProfileExecutionID ();
@@ -403,7 +403,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type IDType and never
    *         <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public IDType setID (@Nullable final String valueParam)
   {
     IDType aObj = getID ();
@@ -427,7 +427,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type UUIDType and never
    *         <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public UUIDType setUUID (@Nullable final String valueParam)
   {
     UUIDType aObj = getUUID ();
@@ -451,7 +451,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type CopyIndicatorType and never
    *         <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public CopyIndicatorType setCopyIndicator (final boolean valueParam)
   {
     CopyIndicatorType aObj = getCopyIndicator ();
@@ -475,7 +475,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type LineCountNumericType and
    *         never <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public LineCountNumericType setLineCountNumeric (@Nullable final BigDecimal valueParam)
   {
     LineCountNumericType aObj = getLineCountNumeric ();
@@ -499,7 +499,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type AccountingCostType and
    *         never <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public AccountingCostType setAccountingCost (@Nullable final String valueParam)
   {
     AccountingCostType aObj = getAccountingCost ();
@@ -523,7 +523,7 @@ public class A21Wrapper extends A21InvoiceType
    * @return The created intermediary object of type BuyerReferenceType and
    *         never <code>null</code>
    */
-  @Nonnull
+  @NonNull
   public BuyerReferenceType setBuyerReference (@Nullable final String valueParam)
   {
     BuyerReferenceType aObj = getBuyerReference ();

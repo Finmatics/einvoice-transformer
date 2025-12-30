@@ -15,14 +15,13 @@
  */
 package com.finmatics.et.core.transform;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import org.w3c.dom.Document;
 
 import com.finmatics.et.core.syntax.xml.IDocumentFormatXML;
 import com.finmatics.et.inbetween.model.a21.A21InvoiceType;
 import com.helger.diagnostics.error.list.ErrorList;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 /**
  * Factory to convert from arbitrary XML format to the A21 format.
@@ -35,7 +34,7 @@ public interface ITransformToInbetweenFactoryXML
    * @return The document format details. May not be <code>null</code>. The
    *         syntax must be XML.
    */
-  @Nonnull
+  @NonNull
   IDocumentFormatXML getDocumentFormat ();
 
   /**
@@ -48,5 +47,5 @@ public interface ITransformToInbetweenFactoryXML
    * @return <code>null</code> in case the transformation failed.
    */
   @Nullable
-  A21InvoiceType convertToInbetweenFormat (@Nonnull Document aDoc, @Nonnull ErrorList aErrorList);
+  A21InvoiceType convertToInbetweenFormat (@NonNull Document aDoc, @NonNull ErrorList aErrorList);
 }

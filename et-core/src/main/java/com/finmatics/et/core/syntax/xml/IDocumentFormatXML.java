@@ -15,11 +15,11 @@
  */
 package com.finmatics.et.core.syntax.xml;
 
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
+
 import com.finmatics.et.core.domain.ESyntaxType;
 import com.finmatics.et.core.domain.IDocumentFormat;
-
-import jakarta.annotation.Nonnull;
-import jakarta.annotation.Nullable;
 
 /**
  * Specialized {@link IDocumentFormat} for XML.
@@ -28,7 +28,7 @@ import jakarta.annotation.Nullable;
  */
 public interface IDocumentFormatXML extends IDocumentFormat
 {
-  @Nonnull
+  @NonNull
   default ESyntaxType getSyntax ()
   {
     return ESyntaxType.XML;

@@ -32,7 +32,7 @@ import com.helger.xsds.xades132.CXAdES132;
 import com.helger.xsds.xades141.CXAdES141;
 import com.helger.xsds.xmldsig.CXMLDSig;
 
-import jakarta.annotation.Nonnull;
+import org.jspecify.annotations.NonNull;
 
 /**
  * JAXB marshaller and unmarshaller for A21 invoices
@@ -41,7 +41,7 @@ import jakarta.annotation.Nonnull;
  */
 public class A21Marshaller extends GenericJAXBMarshaller <A21InvoiceType>
 {
-  @Nonnull
+  @NonNull
   private static ClassLoader _getCL ()
   {
     return A21Marshaller.class.getClassLoader ();
@@ -73,7 +73,7 @@ public class A21Marshaller extends GenericJAXBMarshaller <A21InvoiceType>
    * @return All the XML Schema resources required for A21. Neither
    *         <code>null</code> nor empty.
    */
-  @Nonnull
+  @NonNull
   @Nonempty
   @ReturnsMutableCopy
   public static ICommonsList <ClassPathResource> getAllXSDs ()

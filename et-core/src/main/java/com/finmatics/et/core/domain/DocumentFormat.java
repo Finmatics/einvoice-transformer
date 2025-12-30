@@ -15,12 +15,12 @@
  */
 package com.finmatics.et.core.domain;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.annotation.Nonempty;
 import com.helger.base.enforce.ValueEnforcer;
 import com.helger.base.hashcode.HashCodeGenerator;
 import com.helger.base.tostring.ToStringGenerator;
-
-import jakarta.annotation.Nonnull;
 
 /**
  * Standalone implementation of {@link IDocumentFormat}
@@ -33,9 +33,9 @@ public class DocumentFormat implements IDocumentFormat
   private final String m_sDisplayName;
   private final ESyntaxType m_eSyntax;
 
-  public DocumentFormat (@Nonnull @Nonempty final String sID,
-                         @Nonnull @Nonempty final String sDisplayName,
-                         @Nonnull final ESyntaxType eSyntax)
+  public DocumentFormat (@NonNull @Nonempty final String sID,
+                         @NonNull @Nonempty final String sDisplayName,
+                         @NonNull final ESyntaxType eSyntax)
   {
     ValueEnforcer.notEmpty (sID, "ID");
     ValueEnforcer.notEmpty (sDisplayName, "DisplayName");
@@ -46,21 +46,21 @@ public class DocumentFormat implements IDocumentFormat
     m_eSyntax = eSyntax;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getID ()
   {
     return m_sID;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getDisplayName ()
   {
     return m_sDisplayName;
   }
 
-  @Nonnull
+  @NonNull
   public ESyntaxType getSyntax ()
   {
     return m_eSyntax;

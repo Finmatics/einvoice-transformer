@@ -15,16 +15,16 @@
  */
 package com.finmatics.et.core.domain;
 
+import org.jspecify.annotations.NonNull;
+
 import com.helger.base.id.IHasID;
 import com.helger.base.name.IHasDisplayName;
-
-import jakarta.annotation.Nonnull;
 
 public interface IDocumentFormat extends IHasID <String>, IHasDisplayName
 {
   /**
    * @return The underlying syntax. May not be <code>null</code>.
    */
-  @Nonnull
+  @NonNull
   ESyntaxType getSyntax ();
 }

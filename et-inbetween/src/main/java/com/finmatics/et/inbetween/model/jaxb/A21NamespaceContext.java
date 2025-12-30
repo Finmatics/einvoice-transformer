@@ -23,7 +23,7 @@ import com.helger.ubl21.CUBL21;
 import com.helger.xml.namespace.MapBasedNamespaceContext;
 import com.helger.xsds.xmldsig.CXMLDSig;
 
-import jakarta.annotation.Nonnull;
+import org.jspecify.annotations.NonNull;
 
 /**
  * The namespace context to be used as the A21 namespace prefix mapper.
@@ -50,7 +50,7 @@ public class A21NamespaceContext extends MapBasedNamespaceContext
     addMapping ("ast", "urn:abacus.ac:schema:xsd:shared-types");
   }
 
-  @Nonnull
+  @NonNull
   public static A21NamespaceContext getInstance ()
   {
     return SingletonHolder.INSTANCE;

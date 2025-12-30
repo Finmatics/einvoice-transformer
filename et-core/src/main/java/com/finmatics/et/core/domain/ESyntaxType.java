@@ -15,9 +15,9 @@
  */
 package com.finmatics.et.core.domain;
 
-import com.helger.annotation.Nonempty;
+import org.jspecify.annotations.NonNull;
 
-import jakarta.annotation.Nonnull;
+import com.helger.annotation.Nonempty;
 
 /**
  * Enumeration with all supported syntaxes.
@@ -33,12 +33,12 @@ public enum ESyntaxType
 
   private String m_sExt;
 
-  ESyntaxType (@Nonnull @Nonempty final String sExt)
+  ESyntaxType (@NonNull @Nonempty final String sExt)
   {
     m_sExt = sExt;
   }
 
-  @Nonnull
+  @NonNull
   @Nonempty
   public String getExtension ()
   {
