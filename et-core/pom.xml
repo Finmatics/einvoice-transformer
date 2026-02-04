@@ -21,7 +21,7 @@
   <parent>
     <groupId>com.finmatics.et</groupId>
     <artifactId>et-parent-pom</artifactId>
-    <version>0.3.2-SNAPSHOT</version>
+    <version>0.3.2</version>
   </parent>
   <artifactId>et-core</artifactId>
   <name>et-core</name>
