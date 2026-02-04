@@ -37,11 +37,17 @@
   <xs:import namespace="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2" />
   <xs:import namespace="urn:abacus.ac:schema:xsd:shared-types" schemaLocation="common/Abacus-Shared-Types.xsd" />
 
+   <xs:complexType name="LineExtensionGrossAmountType">
+     <xs:simpleContent>
+       <xs:extension base="udt:AmountType"/>
+     </xs:simpleContent>
+   </xs:complexType>
+
   <xs:complexType name="InvoiceLineType">
     <xs:complexContent>
       <xs:extension base="cac:InvoiceLineType">
         <!-- Added 2026-02-04 -->
-        <xs:element name="LineExtensionGrossAmount" type="cbc:LineExtensionAmountType" minOccurs="0" maxOccurs="1">
+        <xs:element name="LineExtensionGrossAmount" type="LineExtensionGrossAmountType" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:documentation>Line extension gross amount</xs:documentation>
           </xs:annotation>
