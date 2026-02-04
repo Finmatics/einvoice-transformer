@@ -37,6 +37,8 @@ It is recommended to include the parent POM as a BOM like this (replace `x.y.z` 
 
 ## News and Noteworthy
 
+v0.3.2 - 2026-02-04
+* Added `LineExtensionGrossAmount` to Inbetween XSD
 
 v0.3.1 - 2025-12-30
 * Using JSpecify annotations
