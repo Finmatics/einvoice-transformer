@@ -46,12 +46,14 @@
   <xs:complexType name="InvoiceLineType">
     <xs:complexContent>
       <xs:extension base="cac:InvoiceLineType">
-        <!-- Added 2026-02-04 -->
-        <xs:element name="LineExtensionGrossAmount" type="LineExtensionGrossAmountType" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:documentation>Line extension gross amount</xs:documentation>
-          </xs:annotation>
-        </xs:element>
+        <xs:sequence>
+          <!-- Added 2026-02-04 -->
+          <xs:element name="LineExtensionGrossAmount" type="LineExtensionGrossAmountType" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation>Line extension gross amount</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>  
       </xs:extension>
     </xs:complexContent>  
   </xs:complexType>  
