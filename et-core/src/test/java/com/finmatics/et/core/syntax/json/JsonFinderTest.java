@@ -69,9 +69,7 @@ public final class JsonFinderTest
   public void testFindIntLongDecimal ()
   {
     final ErrorList aErr = new ErrorList ();
-    final IJsonObject aObj = new JsonObject ().add ("i", 42)
-                                               .add ("l", 9_999_999_999L)
-                                               .add ("d", "12.34");
+    final IJsonObject aObj = new JsonObject ().add ("i", 42).add ("l", 9_999_999_999L).add ("d", "12.34");
     final JsonFinder aF = _finder (aObj, aErr);
 
     assertEquals (Integer.valueOf (42), aF.findInt ("i", true));
@@ -149,8 +147,8 @@ public final class JsonFinderTest
   {
     final ErrorList aErr = new ErrorList ();
     final IJsonObject aObj = new JsonObject ().add ("scalar", "v")
-                                               .add ("anObject", new JsonObject ().add ("k", "v"))
-                                               .add ("anArray", new JsonArray ().add (1));
+                                              .add ("anObject", new JsonObject ().add ("k", "v"))
+                                              .add ("anArray", new JsonArray ().add (1));
     final JsonFinder aF = _finder (aObj, aErr);
 
     // expecting an object where there's a scalar
