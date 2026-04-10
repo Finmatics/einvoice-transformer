@@ -31,16 +31,19 @@ public enum ESyntaxType
   /** XML */
   XML (".xml");
 
-  private String m_sExt;
+  private final String m_sExt;
 
   ESyntaxType (@NonNull @Nonempty final String sExt)
   {
     m_sExt = sExt;
   }
 
+  /**
+   * @return The file extension including the leading dot.
+   */
   @NonNull
   @Nonempty
-  public String getExtension ()
+  public String getDottedExtension ()
   {
     return m_sExt;
   }

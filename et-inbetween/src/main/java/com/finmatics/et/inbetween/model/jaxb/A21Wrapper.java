@@ -38,23 +38,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type InvoiceTypeCodeType and
    *         never <code>null</code>
    */
   @NonNull
-  public InvoiceTypeCodeType setInvoiceTypeCode (@Nullable final String valueParam)
+  public InvoiceTypeCodeType setInvoiceTypeCode (@Nullable final String sValueParam)
   {
     InvoiceTypeCodeType aObj = getInvoiceTypeCode ();
     if (aObj == null)
     {
-      aObj = new InvoiceTypeCodeType (valueParam);
+      aObj = new InvoiceTypeCodeType (sValueParam);
       setInvoiceTypeCode (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -62,23 +62,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type DocumentCurrencyCodeType
    *         and never <code>null</code>
    */
   @NonNull
-  public DocumentCurrencyCodeType setDocumentCurrencyCode (@Nullable final String valueParam)
+  public DocumentCurrencyCodeType setDocumentCurrencyCode (@Nullable final String sValueParam)
   {
     DocumentCurrencyCodeType aObj = getDocumentCurrencyCode ();
     if (aObj == null)
     {
-      aObj = new DocumentCurrencyCodeType (valueParam);
+      aObj = new DocumentCurrencyCodeType (sValueParam);
       setDocumentCurrencyCode (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -86,23 +86,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type TaxCurrencyCodeType and
    *         never <code>null</code>
    */
   @NonNull
-  public TaxCurrencyCodeType setTaxCurrencyCode (@Nullable final String valueParam)
+  public TaxCurrencyCodeType setTaxCurrencyCode (@Nullable final String sValueParam)
   {
     TaxCurrencyCodeType aObj = getTaxCurrencyCode ();
     if (aObj == null)
     {
-      aObj = new TaxCurrencyCodeType (valueParam);
+      aObj = new TaxCurrencyCodeType (sValueParam);
       setTaxCurrencyCode (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -110,23 +110,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type PricingCurrencyCodeType and
    *         never <code>null</code>
    */
   @NonNull
-  public PricingCurrencyCodeType setPricingCurrencyCode (@Nullable final String valueParam)
+  public PricingCurrencyCodeType setPricingCurrencyCode (@Nullable final String sValueParam)
   {
     PricingCurrencyCodeType aObj = getPricingCurrencyCode ();
     if (aObj == null)
     {
-      aObj = new PricingCurrencyCodeType (valueParam);
+      aObj = new PricingCurrencyCodeType (sValueParam);
       setPricingCurrencyCode (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -134,23 +134,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type PaymentCurrencyCodeType and
    *         never <code>null</code>
    */
   @NonNull
-  public PaymentCurrencyCodeType setPaymentCurrencyCode (@Nullable final String valueParam)
+  public PaymentCurrencyCodeType setPaymentCurrencyCode (@Nullable final String sValueParam)
   {
     PaymentCurrencyCodeType aObj = getPaymentCurrencyCode ();
     if (aObj == null)
     {
-      aObj = new PaymentCurrencyCodeType (valueParam);
+      aObj = new PaymentCurrencyCodeType (sValueParam);
       setPaymentCurrencyCode (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -158,23 +158,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type
    *         PaymentAlternativeCurrencyCodeType and never <code>null</code>
    */
   @NonNull
-  public PaymentAlternativeCurrencyCodeType setPaymentAlternativeCurrencyCode (@Nullable final String valueParam)
+  public PaymentAlternativeCurrencyCodeType setPaymentAlternativeCurrencyCode (@Nullable final String sValueParam)
   {
     PaymentAlternativeCurrencyCodeType aObj = getPaymentAlternativeCurrencyCode ();
     if (aObj == null)
     {
-      aObj = new PaymentAlternativeCurrencyCodeType (valueParam);
+      aObj = new PaymentAlternativeCurrencyCodeType (sValueParam);
       setPaymentAlternativeCurrencyCode (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -182,23 +182,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type AccountingCostCodeType and
    *         never <code>null</code>
    */
   @NonNull
-  public AccountingCostCodeType setAccountingCostCode (@Nullable final String valueParam)
+  public AccountingCostCodeType setAccountingCostCode (@Nullable final String sValueParam)
   {
     AccountingCostCodeType aObj = getAccountingCostCode ();
     if (aObj == null)
     {
-      aObj = new AccountingCostCodeType (valueParam);
+      aObj = new AccountingCostCodeType (sValueParam);
       setAccountingCostCode (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -206,23 +206,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type LocalDate<br>
    *
-   * @param valueParam
+   * @param aValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type IssueDateType and never
    *         <code>null</code>
    */
   @NonNull
-  public IssueDateType setIssueDate (@Nullable final LocalDate valueParam)
+  public IssueDateType setIssueDate (@Nullable final LocalDate aValueParam)
   {
     IssueDateType aObj = getIssueDate ();
     if (aObj == null)
     {
-      aObj = new IssueDateType (valueParam);
+      aObj = new IssueDateType (aValueParam);
       setIssueDate (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (aValueParam);
     }
     return aObj;
   }
@@ -230,23 +230,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type LocalDate<br>
    *
-   * @param valueParam
+   * @param aValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type DueDateType and never
    *         <code>null</code>
    */
   @NonNull
-  public DueDateType setDueDate (@Nullable final LocalDate valueParam)
+  public DueDateType setDueDate (@Nullable final LocalDate aValueParam)
   {
     DueDateType aObj = getDueDate ();
     if (aObj == null)
     {
-      aObj = new DueDateType (valueParam);
+      aObj = new DueDateType (aValueParam);
       setDueDate (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (aValueParam);
     }
     return aObj;
   }
@@ -254,23 +254,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type LocalDate<br>
    *
-   * @param valueParam
+   * @param aValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type TaxPointDateType and never
    *         <code>null</code>
    */
   @NonNull
-  public TaxPointDateType setTaxPointDate (@Nullable final LocalDate valueParam)
+  public TaxPointDateType setTaxPointDate (@Nullable final LocalDate aValueParam)
   {
     TaxPointDateType aObj = getTaxPointDate ();
     if (aObj == null)
     {
-      aObj = new TaxPointDateType (valueParam);
+      aObj = new TaxPointDateType (aValueParam);
       setTaxPointDate (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (aValueParam);
     }
     return aObj;
   }
@@ -278,23 +278,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type LocalTime<br>
    *
-   * @param valueParam
+   * @param aValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type IssueTimeType and never
    *         <code>null</code>
    */
   @NonNull
-  public IssueTimeType setIssueTime (@Nullable final LocalTime valueParam)
+  public IssueTimeType setIssueTime (@Nullable final LocalTime aValueParam)
   {
     IssueTimeType aObj = getIssueTime ();
     if (aObj == null)
     {
-      aObj = new IssueTimeType (valueParam);
+      aObj = new IssueTimeType (aValueParam);
       setIssueTime (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (aValueParam);
     }
     return aObj;
   }
@@ -302,23 +302,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type UBLVersionIDType and never
    *         <code>null</code>
    */
   @NonNull
-  public UBLVersionIDType setUBLVersionID (@Nullable final String valueParam)
+  public UBLVersionIDType setUBLVersionID (@Nullable final String sValueParam)
   {
     UBLVersionIDType aObj = getUBLVersionID ();
     if (aObj == null)
     {
-      aObj = new UBLVersionIDType (valueParam);
+      aObj = new UBLVersionIDType (sValueParam);
       setUBLVersionID (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -326,23 +326,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type CustomizationIDType and
    *         never <code>null</code>
    */
   @NonNull
-  public CustomizationIDType setCustomizationID (@Nullable final String valueParam)
+  public CustomizationIDType setCustomizationID (@Nullable final String sValueParam)
   {
     CustomizationIDType aObj = getCustomizationID ();
     if (aObj == null)
     {
-      aObj = new CustomizationIDType (valueParam);
+      aObj = new CustomizationIDType (sValueParam);
       setCustomizationID (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -350,23 +350,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type ProfileIDType and never
    *         <code>null</code>
    */
   @NonNull
-  public ProfileIDType setProfileID (@Nullable final String valueParam)
+  public ProfileIDType setProfileID (@Nullable final String sValueParam)
   {
     ProfileIDType aObj = getProfileID ();
     if (aObj == null)
     {
-      aObj = new ProfileIDType (valueParam);
+      aObj = new ProfileIDType (sValueParam);
       setProfileID (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -374,23 +374,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type ProfileExecutionIDType and
    *         never <code>null</code>
    */
   @NonNull
-  public ProfileExecutionIDType setProfileExecutionID (@Nullable final String valueParam)
+  public ProfileExecutionIDType setProfileExecutionID (@Nullable final String sValueParam)
   {
     ProfileExecutionIDType aObj = getProfileExecutionID ();
     if (aObj == null)
     {
-      aObj = new ProfileExecutionIDType (valueParam);
+      aObj = new ProfileExecutionIDType (sValueParam);
       setProfileExecutionID (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -398,23 +398,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type IDType and never
    *         <code>null</code>
    */
   @NonNull
-  public IDType setID (@Nullable final String valueParam)
+  public IDType setID (@Nullable final String sValueParam)
   {
     IDType aObj = getID ();
     if (aObj == null)
     {
-      aObj = new IDType (valueParam);
+      aObj = new IDType (sValueParam);
       setID (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -422,23 +422,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type UUIDType and never
    *         <code>null</code>
    */
   @NonNull
-  public UUIDType setUUID (@Nullable final String valueParam)
+  public UUIDType setUUID (@Nullable final String sValueParam)
   {
     UUIDType aObj = getUUID ();
     if (aObj == null)
     {
-      aObj = new UUIDType (valueParam);
+      aObj = new UUIDType (sValueParam);
       setUUID (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -446,23 +446,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type boolean<br>
    *
-   * @param valueParam
+   * @param bValueParam
    *        The value to be set.
    * @return The created intermediary object of type CopyIndicatorType and never
    *         <code>null</code>
    */
   @NonNull
-  public CopyIndicatorType setCopyIndicator (final boolean valueParam)
+  public CopyIndicatorType setCopyIndicator (final boolean bValueParam)
   {
     CopyIndicatorType aObj = getCopyIndicator ();
     if (aObj == null)
     {
-      aObj = new CopyIndicatorType (valueParam);
+      aObj = new CopyIndicatorType (bValueParam);
       setCopyIndicator (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (bValueParam);
     }
     return aObj;
   }
@@ -470,23 +470,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type BigDecimal<br>
    *
-   * @param valueParam
+   * @param aValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type LineCountNumericType and
    *         never <code>null</code>
    */
   @NonNull
-  public LineCountNumericType setLineCountNumeric (@Nullable final BigDecimal valueParam)
+  public LineCountNumericType setLineCountNumeric (@Nullable final BigDecimal aValueParam)
   {
     LineCountNumericType aObj = getLineCountNumeric ();
     if (aObj == null)
     {
-      aObj = new LineCountNumericType (valueParam);
+      aObj = new LineCountNumericType (aValueParam);
       setLineCountNumeric (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (aValueParam);
     }
     return aObj;
   }
@@ -494,23 +494,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type AccountingCostType and
    *         never <code>null</code>
    */
   @NonNull
-  public AccountingCostType setAccountingCost (@Nullable final String valueParam)
+  public AccountingCostType setAccountingCost (@Nullable final String sValueParam)
   {
     AccountingCostType aObj = getAccountingCost ();
     if (aObj == null)
     {
-      aObj = new AccountingCostType (valueParam);
+      aObj = new AccountingCostType (sValueParam);
       setAccountingCost (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -518,23 +518,23 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Special setter with value of type String<br>
    *
-   * @param valueParam
+   * @param sValueParam
    *        The value to be set. May be <code>null</code>.
    * @return The created intermediary object of type BuyerReferenceType and
    *         never <code>null</code>
    */
   @NonNull
-  public BuyerReferenceType setBuyerReference (@Nullable final String valueParam)
+  public BuyerReferenceType setBuyerReference (@Nullable final String sValueParam)
   {
     BuyerReferenceType aObj = getBuyerReference ();
     if (aObj == null)
     {
-      aObj = new BuyerReferenceType (valueParam);
+      aObj = new BuyerReferenceType (sValueParam);
       setBuyerReference (aObj);
     }
     else
     {
-      aObj.setValue (valueParam);
+      aObj.setValue (sValueParam);
     }
     return aObj;
   }
@@ -607,15 +607,15 @@ public class A21Wrapper extends A21InvoiceType
   /**
    * Get the value of the contained CopyIndicatorType object<br>
    *
-   * @param nullValue
+   * @param bNullValue
    *        The value to be returned, if the owning object is <code>null</code>
    * @return Either the value of the contained CopyIndicatorType object or the
    *         passed nullValue
    */
-  public boolean isCopyIndicatorValue (final boolean nullValue)
+  public boolean isCopyIndicatorValue (final boolean bNullValue)
   {
     final CopyIndicatorType aObj = getCopyIndicator ();
-    return ((aObj == null) ? nullValue : aObj.isValue ());
+    return ((aObj == null) ? bNullValue : aObj.isValue ());
   }
 
   /**

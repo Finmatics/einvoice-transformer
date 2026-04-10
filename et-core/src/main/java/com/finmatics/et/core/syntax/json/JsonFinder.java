@@ -39,6 +39,7 @@ import com.helger.json.IJsonValue;
  */
 public final class JsonFinder
 {
+  private static final String DATE_PATTERN = "uuuu-MM-dd";
   private final String m_sPath;
   private final IJsonObject m_aJson;
   private final ErrorList m_aErrorList;
@@ -61,9 +62,7 @@ public final class JsonFinder
   @Nullable
   public IJson findAny (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
-    ValueEnforcer.notEmpty (sChild, "child");
-    if (!m_aJson.isObject ())
-      throw new IllegalStateException (m_aJson + " is not a object");
+    ValueEnforcer.notEmpty (sChild, "Child");
     final IJson aChild = m_aJson.get (sChild);
     if (aChild == null)
     {
@@ -158,7 +157,7 @@ public final class JsonFinder
     final String s = findString (sChild, bMandatory);
     if (s == null)
       return null;
-    final LocalDate ret = PDTFromString.getLocalDateFromString (s, "uuuu-MM-dd");
+    final LocalDate ret = PDTFromString.getLocalDateFromString (s, DATE_PATTERN);
     if (ret == null && bMandatory)
     {
       m_aErrorList.add (SingleError.builder ()

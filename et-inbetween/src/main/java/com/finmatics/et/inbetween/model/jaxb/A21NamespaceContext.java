@@ -15,15 +15,10 @@
  */
 package com.finmatics.et.inbetween.model.jaxb;
 
-import javax.xml.XMLConstants;
-
-import com.finmatics.et.inbetween.model.a21.ObjectFactory;
-import com.helger.annotation.misc.Singleton;
-import com.helger.ubl21.CUBL21;
-import com.helger.xml.namespace.MapBasedNamespaceContext;
-import com.helger.xsds.xmldsig.CXMLDSig;
-
 import org.jspecify.annotations.NonNull;
+
+import com.helger.annotation.misc.Singleton;
+import com.helger.ubl21.UBL21NamespaceContext;
 
 /**
  * The namespace context to be used as the A21 namespace prefix mapper.
@@ -31,7 +26,7 @@ import org.jspecify.annotations.NonNull;
  * @author Philip Helger
  */
 @Singleton
-public class A21NamespaceContext extends MapBasedNamespaceContext
+public final class A21NamespaceContext extends UBL21NamespaceContext
 {
   private static final class SingletonHolder
   {
@@ -40,14 +35,8 @@ public class A21NamespaceContext extends MapBasedNamespaceContext
 
   protected A21NamespaceContext ()
   {
-    addDefaultNamespaceURI (ObjectFactory._Invoice_QNAME.getNamespaceURI ());
-    addMapping ("xsi", XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI);
-    addMapping ("xs", XMLConstants.W3C_XML_SCHEMA_NS_URI);
-    addMapping ("cac", CUBL21.XML_SCHEMA_CAC_NAMESPACE_URL);
-    addMapping ("cbc", CUBL21.XML_SCHEMA_CBC_NAMESPACE_URL);
-    addMapping ("cec", CUBL21.XML_SCHEMA_CEC_NAMESPACE_URL);
-    addMapping ("ds", CXMLDSig.NAMESPACE_URI);
-    addMapping ("ast", "urn:abacus.ac:schema:xsd:shared-types");
+    addDefaultNamespaceURI (com.finmatics.et.inbetween.model.a21.ObjectFactory._Invoice_QNAME.getNamespaceURI ());
+    addMapping ("ast", com.finmatics.et.inbetween.model.shared.ObjectFactory._AbacusDetails_QNAME.getNamespaceURI ());
   }
 
   @NonNull
