@@ -53,6 +53,22 @@
               <xs:documentation>Line extension gross amount</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <!-- Added 2026-04-10 - 3 elements -->
+          <xs:element name="CostCategoryId3" type="xs:string" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation>Cost category ID 3</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CostCategoryId4" type="xs:string" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation>Cost category ID 4</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="CostCategoryId5" type="xs:string" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation>Cost category ID 5</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>  
       </xs:extension>
     </xs:complexContent>  
