@@ -60,6 +60,13 @@
       <artifactId>ph-unittest-support-ext</artifactId>
       <scope>test</scope>
     </dependency>
+    <!-- JAXB runtime impl for the marshaller round-trip tests; consumers of
+         this library are expected to bring their own JAXB runtime. -->
+    <dependency>
+      <groupId>org.glassfish.jaxb</groupId>
+      <artifactId>jaxb-runtime</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   
   <build>
@@ -125,7 +132,12 @@
           </dependency>
         </dependencies>
       </plugin>
-      <!-- Delete the directory with only ObjectFactory 
+      <!-- Delete the regenerated UBL "oasis" package so that the UBL types from
+           ph-ubl21 are used at runtime instead of the locally regenerated ones.
+           IMPORTANT: this execution must run AFTER the JAXB plugin's
+           "generate-sources" phase and BEFORE compilation, hence "process-sources".
+           Do not change the phase without verifying that the oasis/ tree is gone
+           before javac runs - otherwise duplicate UBL classes will leak into the jar.
            Source: http://stackoverflow.com/questions/32635137
       -->
       <plugin>

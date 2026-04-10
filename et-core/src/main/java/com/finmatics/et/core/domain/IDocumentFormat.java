@@ -20,6 +20,11 @@ import org.jspecify.annotations.NonNull;
 import com.helger.base.id.IHasID;
 import com.helger.base.name.IHasDisplayName;
 
+/**
+ * Base interface describing a single supported document format.
+ *
+ * @author Philip Helger
+ */
 public interface IDocumentFormat extends IHasID <String>, IHasDisplayName
 {
   /**

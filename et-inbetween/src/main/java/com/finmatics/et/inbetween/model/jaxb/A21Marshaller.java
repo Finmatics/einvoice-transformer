@@ -17,6 +17,8 @@ package com.finmatics.et.inbetween.model.jaxb;
 
 import java.util.List;
 
+import org.jspecify.annotations.NonNull;
+
 import com.finmatics.et.inbetween.model.a21.A21InvoiceType;
 import com.finmatics.et.inbetween.model.a21.ObjectFactory;
 import com.helger.annotation.Nonempty;
@@ -26,13 +28,7 @@ import com.helger.collection.commons.ICommonsList;
 import com.helger.io.resource.ClassPathResource;
 import com.helger.jaxb.GenericJAXBMarshaller;
 import com.helger.jaxb.validation.LoggingValidationEventHandler;
-import com.helger.ubl21.CUBL21;
-import com.helger.xsds.ccts.cct.schemamodule.CCCTS;
-import com.helger.xsds.xades132.CXAdES132;
-import com.helger.xsds.xades141.CXAdES141;
-import com.helger.xsds.xmldsig.CXMLDSig;
-
-import org.jspecify.annotations.NonNull;
+import com.helger.ubl21.UBL21Marshaller;
 
 /**
  * JAXB marshaller and unmarshaller for A21 invoices
@@ -51,16 +47,13 @@ public class A21Marshaller extends GenericJAXBMarshaller <A21InvoiceType>
                                                                                   _getCL ());
   public static final ClassPathResource XSD_A21 = new ClassPathResource ("schemas/Abacus-Invoice-2.1.xsd", _getCL ());
 
-  private static final List <ClassPathResource> XSDS = new CommonsArrayList <> (CCCTS.getXSDResource (),
-                                                                                CXMLDSig.getXSDResource (),
-                                                                                CXAdES132.getXSDResource (),
-                                                                                CXAdES141.getXSDResource (),
-                                                                                CUBL21.XSD_UNQUALIFIED_DATA_TYPES,
-                                                                                CUBL21.XSD_COMMON_BASIC_COMPONENTS,
-                                                                                CUBL21.XSD_COMMON_AGGREGATE_COMPONENTS,
-                                                                                CUBL21.XSD_COMMON_EXTENSION_COMPONENTS,
-                                                                                XSD_SHARED_TYPES,
-                                                                                XSD_A21).getAsUnmodifiable ();
+  private static final List <ClassPathResource> XSDS;
+  static
+  {
+    final var aList = UBL21Marshaller.getAllBaseXSDs ();
+    aList.addAll (XSD_SHARED_TYPES, XSD_A21);
+    XSDS = aList.getAsUnmodifiable ();
+  }
 
   public A21Marshaller ()
   {
@@ -70,8 +63,7 @@ public class A21Marshaller extends GenericJAXBMarshaller <A21InvoiceType>
   }
 
   /**
-   * @return All the XML Schema resources required for A21. Neither
-   *         <code>null</code> nor empty.
+   * @return All the XML Schema resources required for A21. Neither <code>null</code> nor empty.
    */
   @NonNull
   @Nonempty

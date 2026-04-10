@@ -145,10 +145,10 @@ public final class JsonFinder
   @Nullable
   public String findString (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
-    final IJsonValue aJson = findValue (sChild, bMandatory);
-    if (aJson == null)
+    final IJsonValue aValue = findValue (sChild, bMandatory);
+    if (aValue == null)
       return null;
-    return aJson.getAsString ();
+    return aValue.getAsString ();
   }
 
   @Nullable
@@ -175,17 +175,17 @@ public final class JsonFinder
   @NonNull
   public ETriState findBoolean (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
-    final IJsonValue aJson = findValue (sChild, bMandatory);
-    return aJson == null ? ETriState.UNDEFINED : ETriState.valueOf (aJson.getAsBoolean ());
+    final IJsonValue aValue = findValue (sChild, bMandatory);
+    return aValue == null ? ETriState.UNDEFINED : ETriState.valueOf (aValue.getAsBoolean ());
   }
 
   @Nullable
   public Integer findInt (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
-    final IJsonValue aJson = findValue (sChild, bMandatory);
-    if (aJson == null)
+    final IJsonValue aValue = findValue (sChild, bMandatory);
+    if (aValue == null)
       return null;
-    final Integer ret = aJson.getAsIntObj ();
+    final Integer ret = aValue.getAsIntObj ();
     if (ret == null && bMandatory)
     {
       m_aErrorList.add (SingleError.builder ()
@@ -193,7 +193,7 @@ public final class JsonFinder
                                    .errorText ("Expected the child element '" +
                                                sChild +
                                                "' to be an int value but failed to parse '" +
-                                               aJson.getAsString () +
+                                               aValue.getAsString () +
                                                "'")
                                    .build ());
     }
@@ -203,10 +203,10 @@ public final class JsonFinder
   @Nullable
   public Long findLong (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
-    final IJsonValue aJson = findValue (sChild, bMandatory);
-    if (aJson == null)
+    final IJsonValue aValue = findValue (sChild, bMandatory);
+    if (aValue == null)
       return null;
-    final Long ret = aJson.getAsLongObj ();
+    final Long ret = aValue.getAsLongObj ();
     if (ret == null && bMandatory)
     {
       m_aErrorList.add (SingleError.builder ()
@@ -214,7 +214,7 @@ public final class JsonFinder
                                    .errorText ("Expected the child element '" +
                                                sChild +
                                                "' to be a long value but failed to parse '" +
-                                               aJson.getAsString () +
+                                               aValue.getAsString () +
                                                "'")
                                    .build ());
     }
@@ -224,10 +224,10 @@ public final class JsonFinder
   @Nullable
   public BigDecimal findDouble (@NonNull @Nonempty final String sChild, final boolean bMandatory)
   {
-    final IJsonValue aJson = findValue (sChild, bMandatory);
-    if (aJson == null)
+    final IJsonValue aValue = findValue (sChild, bMandatory);
+    if (aValue == null)
       return null;
-    final BigDecimal ret = aJson.getAsBigDecimal ();
+    final BigDecimal ret = aValue.getAsBigDecimal ();
     if (ret == null && bMandatory)
     {
       m_aErrorList.add (SingleError.builder ()
@@ -235,7 +235,7 @@ public final class JsonFinder
                                    .errorText ("Expected the child element '" +
                                                sChild +
                                                "' to be an double value but failed to parse '" +
-                                               aJson.getAsString () +
+                                               aValue.getAsString () +
                                                "'")
                                    .build ());
     }

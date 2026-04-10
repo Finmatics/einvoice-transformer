@@ -33,7 +33,7 @@ public final class A21NamespaceContext extends UBL21NamespaceContext
     static final A21NamespaceContext INSTANCE = new A21NamespaceContext ();
   }
 
-  protected A21NamespaceContext ()
+  private A21NamespaceContext ()
   {
     addDefaultNamespaceURI (com.finmatics.et.inbetween.model.a21.ObjectFactory._Invoice_QNAME.getNamespaceURI ());
     addMapping ("ast", com.finmatics.et.inbetween.model.shared.ObjectFactory._AbacusDetails_QNAME.getNamespaceURI ());
